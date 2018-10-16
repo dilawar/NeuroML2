@@ -5,23 +5,25 @@ addons:
   apt:
     packages:
        # Requirements for Brian & NEST
-    - python-numpy 
-    - python-scipy 
-    - python-matplotlib 
-    - python-sympy
+    - python-numpy python3-numpy
+    - python-scipy  python3-scipy
+    - python-matplotlib  python3-matplotlib
+    - python-sympy python3-sympy
         # Requirements for NetPyNE & libNeuroML
-    - python-tk
-    - python-lxml        
-    - python-tornado        
+    - python-tk python3-tk
+    - python-lxml python3-tk
+    - python-tornado python3-tornado
         # Requirements for Moose
-    - python-dev
+    - python-dev python3-dev
     - libhdf5-dev
     - libgsl0-dev 
     - g++
 
 
 language: python
-python: 2.7
+python: 
+    - 2.7
+    - 3.6
  
 virtualenv:
     system_site_packages: true
