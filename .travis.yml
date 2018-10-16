@@ -8,7 +8,7 @@ addons:
     - python-numpy python3-numpy
     - python-scipy  python3-scipy
     - python-matplotlib  python3-matplotlib
-    - python-sympy python3-sympy
+    - python-sympy # python3-sympy
         # Requirements for NetPyNE & libNeuroML
     - python-tk python3-tk
     - python-lxml python3-tk
@@ -55,6 +55,7 @@ install:
     - cd
     - pip install git+https://github.com/OpenSourceBrain/osb-model-validation
     
+    - pip install sympy # Why is this needed? python3-sympy no available
     - pip install scipy # Why is this needed? Doesn't seem to get installed correctly on trusty with addons above...
     
 
