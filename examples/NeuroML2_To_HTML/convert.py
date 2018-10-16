@@ -5,7 +5,7 @@ import sys
 try:
     infile = sys.argv[1]
 except:
-    print "Usage: convert.py _fileToConvert_"
+    print( "Usage: convert.py _fileToConvert_" )
     sys.exit(1)
     
 xsl_file = 'NeuroML2_To_HTML.xsl'
